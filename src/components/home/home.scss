@@ -1,0 +1,32 @@
+@import "variables";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  .header {
+
+  }
+
+  .skills {
+
+  }
+
+  .experience {
+    display: flex;
+
+    .education {
+
+    }
+
+    .work {
+
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      flex-direction: row;
+      .education, .work {
+        width: 50%;
+      }
+    }
+  }
+}
