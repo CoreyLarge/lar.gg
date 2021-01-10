@@ -12,6 +12,7 @@ export const Home = () => (
             <div className="header">
             </div>
             <div className="skills">
+                test
             </div>
             <div className="experience">
                 <div className="education">

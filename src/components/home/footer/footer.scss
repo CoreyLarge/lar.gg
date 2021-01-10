@@ -17,9 +17,13 @@
   &:last-of-type{
     margin-right: unset;
   }
-
-
-
 }
 
+.footer-link li a{
+  transition: all 0.3s ease 0s;
+}
+
+.footer-link li a:hover{
+  color: #0088a9;
+}
 
