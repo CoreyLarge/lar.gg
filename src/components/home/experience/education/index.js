@@ -15,7 +15,7 @@ export const Education = ({school,subject,grade,results}) => (
                         {r.title}
                     </td>
                     <td>
-                        {r.mark}%
+                        {r.mark}
                     </td>
                 </tr>
             ))}

@@ -5,6 +5,32 @@
   color: #ecf0f1;
 }
 
+.header{
+  border-bottom: 1px solid #343a40;
+}
+
+.header h1, h2 {
+  padding-bottom: 30px;
+}
+
+.education h2{
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #343a40;
+}
+
+.work h2{
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #343a40;
+}
+
+
+.row{
+  padding-top: 1rem;
+}
+.row h2{
+  text-align: center;
+
+}
 
 .home {
   display: flex;
@@ -14,17 +40,38 @@
   }
 
   .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .skill-item{
+      display: flex;
+    }
+  }
 
+  .skill-item{
+    text-align: center;
+    margin-right: 1rem;
+    &:last-of-type{
+      margin-right: unset;
+    }
+  }
+
+  .experience h2{
+    padding-left: 10px
   }
 
   .experience {
     display: flex;
-    padding-top: 20rem;
+    flex-direction: column;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
     .education {
+      padding-bottom: 40px;
 
     }
 
     .work {
+      padding-bottom: 20px;
 
     }
 
@@ -41,3 +88,56 @@ a, button {
   font-family: "Montserrat", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.card {
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #24252A;
+}
+
+.card p{
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.work-item{
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+.education-item{
+  padding-top: 3px;
+  padding-bottom: 10px;
+}

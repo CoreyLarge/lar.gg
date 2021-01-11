@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.scss";
-import {FaGithub, FaLinkedinIn} from "react-icons/fa"
+import {FaGithub, FaLinkedinIn, FaTwitter} from "react-icons/fa"
 import {IconContext} from "react-icons";
 
 export const Footer = ({}) => (
@@ -16,6 +16,7 @@ export const Footer = ({}) => (
                     <a href="https://www.linkedin.com/in/corey-large-bb08b1120/"> <FaLinkedinIn/></a>
                 </div>
             </div>
+
         </div>
     </IconContext.Provider>
 )
