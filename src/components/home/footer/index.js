@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.scss";
-import {FaGithub, FaLinkedinIn, FaTwitter} from "react-icons/fa"
+import {FaGithub, FaLinkedinIn} from "react-icons/fa"
 import {IconContext} from "react-icons";
 
 export const Footer = ({}) => (

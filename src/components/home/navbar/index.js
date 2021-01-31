@@ -6,7 +6,7 @@ export const Navbar = ({links}) => (
         <header>
             <nav>
                 <ul class="nav_links">
-                    {/*<li><a href="#">Contact</a></li>*/}
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

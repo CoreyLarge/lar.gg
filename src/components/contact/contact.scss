@@ -1,0 +1,29 @@
+@import "variables";
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29rem;
+
+  .contact-form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    border-radius: $radius;
+    transition: width 250ms ease-in-out;
+
+    h2 {
+      color: white;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 30rem;
+    }
+  }
+}

@@ -1,11 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import "./home.scss";
-import {Work} from "./experience/work"
-import {Workdata} from "../../work";
-import {FaGithub, FaLinkedinIn, FaPython, FaJava, AiOutlineConsoleSql, SiJavascript} from "react-icons/all"
+import {AiOutlineConsoleSql, FaJava, FaPython, SiJavascript} from "react-icons/all"
 import {Navbar} from "./navbar";
 import {Footer} from "./footer";
-import {Education} from "./experience/education";
 import Accordion from "../Accordion";
 
 
@@ -16,15 +13,13 @@ export class Home extends Component {
             tab: -1,
         }
         this.toggle = (tab) => {
-            if (this.state.tab !== tab)
-            {
+            if (this.state.tab !== tab) {
                 this.setState({
                     tab
                 })
             }
         }
     }
-
 
     render() {
         return (
@@ -100,8 +95,8 @@ export class Home extends Component {
                             {/*          description={data.description} isOpened={this.state.tab === i} onClick={()=>this.toggle (i)}/>*/}
                             {/*))}*/}
 
-                            <Accordion title = "Business Services Organisation"
-                                       content = "
+                            <Accordion title="Business Services Organisation"
+                                       content="
                                        <h4>IT Support Officer</h4>
                                        <h4>July 2020 - Present</h4>
 
@@ -114,8 +109,8 @@ export class Home extends Component {
                                        <p>Installing and providing support remotely"
 
                             />
-                            <Accordion title = "Business Services Organisation  (Placement)"
-                                       content = "
+                            <Accordion title="Business Services Organisation  (Placement)"
+                                       content="
                                        <h4>IT Support Placement Student</h4>
                                        <h4>August 2018 - August 2019</h4>
                                        <p>Similar to current role</p>
@@ -133,6 +128,5 @@ export class Home extends Component {
             </Fragment>)
 
 
-
-}
+    }
 }

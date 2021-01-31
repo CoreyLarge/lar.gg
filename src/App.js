@@ -1,12 +1,13 @@
-import logo from './logo.svg';
 import {BrowserRouter, Route} from "react-router-dom";
 import './App.css';
 import {Home} from "./components/home";
+import {Contact} from "./components/contact";
 
 function App() {
   return (
     <BrowserRouter>
-      <Route path="" component={Home}/>
+      <Route path="/" exact component={Home}/>
+      <Route path="/contact" exact component={Contact}/>
     </BrowserRouter>
   );
 }
