@@ -4,6 +4,7 @@ import {AiOutlineConsoleSql, FaJava, FaPython, SiJavascript} from "react-icons/a
 import {Navbar} from "./navbar";
 import {Footer} from "./footer";
 import Accordion from "../Accordion";
+import Typewriter from "typewriter-effect";
 
 
 export class Home extends Component {
@@ -27,8 +28,11 @@ export class Home extends Component {
                 <div className="home wrap">
                     <Navbar/>
                     <div className="header">
-                        <h1> Corey Large </h1>
-                        <h2>Ulster University Computer Science Graduate 2020</h2>
+                        <h1><Typewriter className="typewriter-title" onInit={(typewriter) =>{
+                        typewriter.typeString("Corey Large").start();
+                        }}/></h1>
+                        <h2>Ulster University Computer Science Graduate 2020
+                        </h2>
                         <h2>First Class Honours</h2>
                     </div>
                     <div className="row">
@@ -70,11 +74,13 @@ export class Home extends Component {
                                            content="
                                            <h4>Computing Science</h4>
                                            <h4>First Class Honours</h4>
+                                           <p>Full Stack Development   83%</p>
                                            <p>Concurrent and Distributed Systems   78%</p>
                                            <p>Data Analytics   73%</p>
-                                           <p>Process Management   59%</p>
                                            <p>Project  64%</p>
-                                           <p>Full Stack Development   83%</p>
+                                           <p>Process Management   59%</p>
+
+
 
                                            "
                                 />
@@ -90,11 +96,6 @@ export class Home extends Component {
                         </div>
                         <div className="work">
                             <h2>Work Experience</h2>
-                            {/*{Workdata.map((data,i) => (*/}
-                            {/*    <Work company={data.company} jobtitle={data.jobtitle} dates={data.dates}*/}
-                            {/*          description={data.description} isOpened={this.state.tab === i} onClick={()=>this.toggle (i)}/>*/}
-                            {/*))}*/}
-
                             <Accordion title="Business Services Organisation"
                                        content="
                                        <h4>IT Support Officer</h4>
