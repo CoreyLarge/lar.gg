@@ -1,0 +1,16 @@
+@import "vars";
+
+footer {
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: $accent-light;
+
+    }
+  }
+}

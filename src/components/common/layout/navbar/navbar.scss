@@ -1,0 +1,9 @@
+@import "vars";
+
+menu{
+  background-color: $bg;
+  .wrap{
+    display: flex;
+    justify-content: flex-end;
+  }
+}

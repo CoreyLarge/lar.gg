@@ -1,0 +1,45 @@
+@import "vars";
+
+.wrap {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: padding ease-in-out 250ms;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  @media screen {
+    @media (min-width: $breakpoint-md) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      padding-left: 12rem;
+      padding-right: 12rem;
+    }
+  }
+}
+
+.vertical-wrap {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: padding ease-in-out 250ms;
+
+
+  @media screen {
+    @media (min-width: $breakpoint-md) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+}
